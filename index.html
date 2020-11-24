@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>COVID-19 test</h1>
+    <form  onsubmit="submited()">
+        <div>
+            <h2>information</h2>
+            <center>
+            <input type="text" placeholder="donner votre nom" class="alg" required>
+            <input type="text" placeholder="donner votre prenom" class="alg" required>
+            <input type="email" placeholder="donner votre adress email" style="width: 96.5%;" required>
+            <input type="number" placeholder="donner votre numero" style="width: 96.5%;" required>
+            </center>
+        </div>
+        <div>
+            <h2>question</h2>
+            <center>
+            <input type="number" name="temp" id="temp" placeholder="donner votre temperature" style="width: 96.5%;" required >
+            </center>
+            <h3>Symptômes les plus fréquents:</h3>
+            <input type="checkbox" name="toux" id="toux" class="c">
+            <label for="toux"> avez vousde la toux sèche</label>  
+            <br>
+            <input type="checkbox" name="fatigue" id="fatigue" class="c">
+            <label for="fatigue">avez vous de la fatigue</label>  
+            <h3>Symptômes moins fréquents:</h3>
+            <input type="checkbox" name="courbatures" id="courbatures" class="c">
+            <label for="courbatures">courbatures</label>  
+            
+            <br>
+            <input type="checkbox" name="maux" id="maux" class="c">
+            <label for="maux">maux de gorge</label>  
+            
+            <br>
+            <input type="checkbox" name="diarrhée" id="diarrhée" class="c">
+            <label for="diarrhée">diarrhée</label>  
+            
+            <br>
+            <input type="checkbox" name="odorat" id="odorat" class="c">
+            <label for="odorat">perte de l’odorat ou du goût</label>  
+            
+            <br>
+            <input type="checkbox" name="conjonctivite" id="conjonctivite" class="c">
+            <label for="conjonctivite">conjonctivite</label>  
+            
+            <br>
+            <input type="checkbox" name="tête" id="tête" class="c">
+            <label for="tête">maux de tête</label>  
+            
+            <br>
+            <input type="checkbox" name="éruption" id="éruption" class="c">
+            <label for="éruption">éruption cutanée, ou décoloration des doigts ou des orteils</label>  
+            
+            <br>
+            <h3>Symptômes graves:</h3>
+            <input type="checkbox" name="respirer" id="respirer" class="c">
+            <label for="respirer">difficultés à respirer ou essoufflement</label> 
+            <br>
+            <input type="checkbox" name="poitrine" id="poitrine" class="c">
+            <label for="poitrine">sensation d’oppression ou douleur au niveau de la poitrine</label> 
+            <br>
+            <input type="checkbox" name="motricité" id="motricité" class="c">
+            <label for="motricité">perte d’élocution ou de motricité</label> 
+            <br>
+        </div>
+        <center>
+        <button type="submit" class="subB" id="sub">envoyer</button>
+        </center>
+    </form>
+    
+    </div>
+    <footer>
+        <p>© All rights reserved | disigned by Hamouda Ben Abdennebi 3eme info</p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
